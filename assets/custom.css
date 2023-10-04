@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Pixel Gaming', Regular;
+    src: url('https://raw.githubusercontent.com/Marin-BB/NBA/main/fonts/pixel-gaming-font/PixelGamingRegular-d9w0g.ttf') format('truetype'); 
+}
+
+.custom-font-title {
+    font-family: 'Pixel Gaming', Regular;
+}
