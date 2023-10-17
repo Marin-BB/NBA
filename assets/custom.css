@@ -1,8 +1,288 @@
 @font-face {
-    font-family: 'Pixel Gaming', Regular;
-    src: url('https://raw.githubusercontent.com/Marin-BB/NBA/main/fonts/pixel-gaming-font/PixelGamingRegular-d9w0g.ttf') format('truetype'); 
+    font-family: 'Pixel Gaming'; 
+    src: url('https://raw.githubusercontent.com/Marin-BB/NBA/main/fonts/pixel-gaming-font/PixelGamingRegular-d9w0g.ttf');
 }
 
-.custom-font-title {
-    font-family: 'Pixel Gaming', Regular;
+@font-face {
+    font-family: 'Allison'; 
+    src: url('https://raw.githubusercontent.com/Marin-BB/NBA/main/fonts/allison-script/Allison_Script.otf');
+}
+
+@font-face {
+    font-family: 'Arty'; 
+    src: url('https://raw.githubusercontent.com/Marin-BB/NBA/main/fonts/arty-signature/Arty%20Signature.otf');
+}
+
+@font-face {
+    font-family: 'Holligate'; 
+    src: url('https://raw.githubusercontent.com/Marin-BB/NBA/main/fonts/holligate-signature-demo/Holligate%20Signature%20Demo.ttf');
+}
+
+@font-face {
+    font-family: 'Christhyna'; 
+    src: url('https://raw.githubusercontent.com/Marin-BB/NBA/main/fonts/cristhyna-signature-font/CristhynaSignature-1GXOv.ttf');
+}
+
+@font-face {
+    font-family: 'Thunderbold'; 
+    src: url('https://raw.githubusercontent.com/Marin-BB/NBA/main/fonts/thunderbold-font/ThunderboldDemo-qZ7q2.otf');
+}
+
+@font-face {
+    font-family: 'Doppler'; 
+    src: url('https://raw.githubusercontent.com/Marin-BB/NBA/main/fonts/doppler-font/Doppler-G3WA.ttf');
+}
+
+@font-face {
+    font-family: 'Signature'; 
+    src: url('https://raw.githubusercontent.com/Marin-BB/NBA/main/fonts/autograf-font/AutografPersonalUseOnly-mOBm.ttf');
+}
+
+@font-face {
+    font-family: 'Coliseu'; 
+    src: url('https://raw.githubusercontent.com/Marin-BB/NBA/main/fonts/dk-coliseu-font/Dkcoliseu-GnpA.otf');
+}
+
+@font-face {
+    font-family: 'Ankh'; 
+    src: url('https://raw.githubusercontent.com/Marin-BB/NBA/main/fonts/ankh-sanctuary-font/AnkhSanctuary-nROx4.ttf');
+}
+
+body {
+    overflow-x: hidden;
+    text-align: left;
+    font-family: "Coliseu";
+    font-size: 30px;
+    color: #2c2c2c;
+    background-color: black;
+}
+
+#trae-s {
+    width: 75%; /* Adjust the percentage as needed */
+    display: block; /* Ensures the image behaves as a block-level element */
+    margin: auto; /* Centers the image both horizontally and vertically */
+}
+
+#header {
+    position: sticky;
+    top: 10px;
+    background-color: #2c2c2c;  /* Change to your preferred background color */
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.navbar {
+    background-color: #2c2c2c; /* Adjust the background color as needed */
+    position: sticky;
+    font-size: 75px;
+    top: 150px; 
+    border-radius: 10px;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    font-family: "Ankh";
+    height: 5vh; /* Set the height to x% of the viewport height */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Add this line to vertically align items */
+    line-height: 5vh;
+    vertical-align: middle;
+}
+
+.navbar li {
+    margin:0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 33%;
+    transition: font-size 0.30s;
+    padding: 10px 20px; */ Adjust hitbox around items (y-axis x-axis)
+    line-height: 5vh;
+    vertical-align: middle;
+}
+
+.navbar a:hover {
+    font-size: 45%;
+}
+
+#logo {
+    width: 100px;  /* Adjust the width as needed */
+    height: auto;  /* Maintain the aspect ratio */
+    margin-right: 25px;  /* Add some spacing between the logo and text */
+    margin-left: 10px;
+    align-items: center; /* Add this line to vertically align items */
+    vertical-align: middle;
+}
+
+#silhouette {
+    width: 120px;  /* Adjust the width as needed */
+    height: auto;  /* Maintain the aspect ratio */
+    margin-left: auto; /* Align the image to the right by pushing it to the left margin */
+    margin-right: 10px; /* Add some spacing between the image and the text */
+    margin-top: 0px;
+} 
+
+#header-text {
+    font-size: 45px;  /* Adjust the font size as needed */
+    font-family: "Ankh";
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+#player-dropdown {
+    font-size: 20px;
+    font-family: "Pixel Gaming";
+    width: 40vw; /* Adjust the width as needed */
+}
+
+#page-content {
+    margin-left: 10px; /* Add some spacing between the photo and the name */
+    position: sticky;
+    top: 205px;
+}
+
+#player-photo {
+width: 142px;
+    border-radius: 10px; /* Add rounded corners */
+    margin-top: 10px; /* Add some spacing between the photo and the name */
+}
+
+#player-name {
+    font-family: 'Signature'; /* Your custom font */
+    color: #ffffff;
+    white-space: nowrap;  /* Prevent text from wrapping to the next line */
+    overflow: hidden;     /* Hide the overflowed text */
+    text-overflow: ellipsis; /* Display ellipsis (...) for truncated text */
+    font-size: 65px;  /* Start with 100% font size and adjust as needed */
+    text-align: left;  /* Align the text to the right */
+}
+
+#player-info {
+    display: inline; /* Display the player photo and name inline */
+    float: rigth;
+display: inline-block;
+margin-right: 10px;
+}
+
+#player-data {
+    font-family: 'Pixel Gaming'; /* Your custom font */
+    color: #ffffff;
+    font-size: 25px;  /* Start with 100% font size and adjust as needed */
+display: inline-block;
+vertical-align: top;
+margin-top: 10px;
+margin-right: 10px;
+}
+
+.styled-table {
+    font-family: 'Pixel Gaming';
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px; /* Add rounded corners to the table */
+    overflow: hidden; /* Ensure the table content is within the rounded boundaries */
+    
+}
+
+.styled-table th {
+    background-color: #2c2c2c;
+    border: none; /* Remove border for table headers */
+    padding: 18px;
+    text-align: left;
+}
+
+.styled-table tr {
+    border: none; /* Remove border for table rows */
+}
+
+.styled-table td {
+    border-bottom: 1px solid #ddd; /* Add a border only to the bottom of table cells */
+    padding: 8px; /* Add spacing between table cells */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.styled-table tr:last-child td {
+    border-bottom: none;
+}
+
+#predict-button {
+display: inline-block;
+margin-right: 10px;
+}
+
+#predict-ast {
+display: inline-block;
+margin-right: 10px;
+}
+
+#predict-trb {
+display: inline-block;
+margin-right: 10px;
+}
+
+#clear-button {
+display: inline-block;
+margin-right: 10px;
+}
+
+#prediction-output {
+    display: inline-block;
+    font-size: 20px; /* Adjust the font size as needed */
+    font-family: "Pixel Gaming";
+    color: #ffffff;
+    position: absolute;
+    top: 45%; /* Center vertically */
+    left: 52%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+}
+
+#prediction-ast {
+    display: inline-block;
+    font-size: 20px; /* Adjust the font size as needed */
+    font-family: "Pixel Gaming";
+    color: #ffffff;
+    position: absolute;
+    top: 45%; /* Center vertically */
+    left: 70%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+}
+
+#prediction-trb {
+    display: inline-block;
+    font-size: 20px; /* Adjust the font size as needed */
+    font-family: "Pixel Gaming";
+    color: #ffffff;
+    position: absolute;
+    top: 45%; /* Center vertically */
+    left: 88%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+}
+
+#background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover; /* Maintain aspect ratio and cover entire element */
+}
+
+#background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
